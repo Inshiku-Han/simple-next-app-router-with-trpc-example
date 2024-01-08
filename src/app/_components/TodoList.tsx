@@ -1,7 +1,7 @@
 'use client'
 
 import { trpc } from '~/app/_trpc/client'
-import { caller } from '~/app/_trpc/server-client'
+import { type caller } from '~/app/_trpc/server-client'
 
 export default function TodoList({
   initialTodos,

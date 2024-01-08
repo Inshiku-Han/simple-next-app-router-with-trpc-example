@@ -4,6 +4,7 @@ import { QueryClient, QueryClientProvider } from '@tanstack/react-query'
 import { httpBatchLink } from '@trpc/react-query'
 import { useState, type PropsWithChildren } from 'react'
 import { trpc } from '~/app/_trpc/client'
+import { TRPC_ENDPOINT } from '~/constants/api'
 
 export function Providers({ children }: PropsWithChildren) {
   const [queryClient] = useState(() => new QueryClient())
@@ -11,7 +12,7 @@ export function Providers({ children }: PropsWithChildren) {
     trpc.createClient({
       links: [
         httpBatchLink({
-          url: 'http://localhost:3001/api/trpc',
+          url: TRPC_ENDPOINT,
         }),
       ],
     }),

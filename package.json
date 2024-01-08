@@ -3,30 +3,34 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev --turbo",
+    "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "format": "prettier ./src --write"
   },
   "dependencies": {
-    "@tanstack/react-query": "^4.36.1",
-    "@trpc/react-query": "^10.45.0",
-    "@trpc/server": "^10.45.0",
-    "next": "14.0.4",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "@tanstack/react-query": "^4",
+    "@trpc/react-query": "^10",
+    "@trpc/server": "^10",
+    "next": "14",
+    "react": "^18.2",
+    "react-dom": "^18.2"
   },
   "devDependencies": {
     "@types/node": "^20",
     "@types/react": "^18.2",
     "@types/react-dom": "^18.2",
-    "autoprefixer": "^10.4.16",
+    "@typescript-eslint/eslint-plugin": "^6",
+    "@typescript-eslint/parser": "^6",
+    "autoprefixer": "^10.4",
     "eslint": "^8",
-    "eslint-config-next": "14.0.4",
-    "postcss": "^8.4.32",
-    "prettier": "^3.1.1",
-    "prettier-plugin-tailwindcss": "^0.5.10",
-    "tailwindcss": "^3.4.0",
+    "eslint-config-next": "14",
+    "eslint-plugin-react": "^7",
+    "postcss": "^8.4",
+    "prettier": "^3.1",
+    "prettier-plugin-tailwindcss": "^0.5",
+    "tailwindcss": "^3.4",
     "typescript": "^5"
   }
 }
